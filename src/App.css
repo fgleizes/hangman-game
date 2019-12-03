@@ -2,7 +2,7 @@
 
 .pendu {
   font-family: 'Rye', cursive;
-  background-image: url("/parchemin.jpg");
+  background-image: url('/img/parchemin.jpg');
   background-size: cover;
   background-position: center;
 }
