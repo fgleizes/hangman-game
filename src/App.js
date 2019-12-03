@@ -117,7 +117,6 @@ class App extends Component {
         {this.state.result !== 0 &&
           <DisplayResult
             result={this.state.result}
-            // score={this.state.score}
             score={this.state.maxAttempt - this.state.attempt}
             currentPhrase={this.state.currentPhrase}
             initGame={this.initGame}
