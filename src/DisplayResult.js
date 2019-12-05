@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 
 import './DisplayResult.css'
@@ -26,4 +27,10 @@ const DisplayResult = ({ result, score, currentPhrase, initGame }) => {
   )
 }
 
+DisplayResult.propTypes = {
+  result: PropTypes.number.isRequired,
+  score: PropTypes.number.isRequired,
+  currentPhrase: PropTypes.string.isRequired,
+  initGame: PropTypes.func.isRequired,
+}
 export default DisplayResult

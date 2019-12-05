@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 
 import './CurrentPhrase.css'
@@ -30,4 +31,8 @@ function computeDisplay(phrase, usedLetters) {
   )
 }
 
+CurrentPhrase.propTypes = {
+  currentPhrase: PropTypes.string.isRequired,
+  usedLetters: PropTypes.instanceOf(Set).isRequired
+}
 export default CurrentPhrase

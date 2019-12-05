@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -31,4 +32,8 @@ function handleLifes(attempt, maxAttempt) {
   return lifes
 }
 
+Lifes.propTypes = {
+  attempt: PropTypes.number.isRequired,
+  maxAttempt: PropTypes.number.isRequired
+}
 export default Lifes
