@@ -6,7 +6,7 @@ const CurrentPhrase = ({currentPhrase, usedLetters}) => {
   return (
     <div className="phrase m-5">
 
-      <h5 className="m-0">
+      <h5 className="m-0 d-flex flex-wrap justify-content-center">
 
         {computeDisplay(currentPhrase, usedLetters).split('').map((letter, index) => (
 

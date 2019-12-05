@@ -91,14 +91,16 @@ class App extends Component {
 
   render() {
     return (
-      <div className="pendu vh-100 p-5 d-flex flex-column align-items-center justify-content-between">
-        <h1 className="mt-5 mb-0">{this.state.title}</h1>
-        <p className="score">Votre score actuel : {this.state.score} points</p>
+      <div className="pendu p-5 d-flex flex-column align-items-center justify-content-between">
+        <h1>{this.state.title}</h1>
 
-        <Lifes
-          attempt={this.state.attempt}
-          maxAttempt={this.state.maxAttempt}
-        />
+        <div className="container-score">
+          <p className="score">Votre score actuel : {this.state.score} points</p>
+          <Lifes
+            attempt={this.state.attempt}
+            maxAttempt={this.state.maxAttempt}
+          />
+        </div>
         
         {this.state.currentPhrase !== null && 
           <CurrentPhrase

@@ -10,7 +10,7 @@ const Lifes = ({ attempt, maxAttempt }) => {
     <div className="lifes">
       { 
         handleLifes(attempt, maxAttempt).map((value, index) => {
-          return value === 1 && <span className="life mr-4" key={"life_" + index}><FontAwesomeIcon icon={faHeart} color="red" /></span>
+          return value === 1 && <span className="life" key={"life_" + index}><FontAwesomeIcon icon={faHeart} color="red" /></span>
         }) 
       }
     </div>

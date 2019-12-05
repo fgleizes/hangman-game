@@ -23,7 +23,7 @@ class Keyboard extends Component {
 
   render() {
     return (
-      <div className="keyboard keyboard-active d-flex flex-wrap mb-5">
+      <div className="keyboard keyboard-active d-flex flex-wrap justify-content-center mb-5">
 
         {ALPHABET.map((letter, index) => (
 

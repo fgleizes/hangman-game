@@ -1,5 +1,19 @@
 .lifes {
-  position: absolute;
-  top: 3rem;
-  left: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
+.life {
+  margin-left: 1.5rem;
+}
+
+.life:first-child {
+  margin-left: 0!important;
+}
+
+@media screen and (min-width: 610px) {
+  .lifes {
+    width: 50%;
+    text-align: right;
+  }
 }
