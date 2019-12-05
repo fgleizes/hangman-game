@@ -91,7 +91,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="pendu p-5 d-flex flex-column align-items-center justify-content-between">
+      <div className="pendu p-2 p-md-5 d-flex flex-column align-items-center justify-content-between">
         <h1>{this.state.title}</h1>
 
         <div className="container-score">
