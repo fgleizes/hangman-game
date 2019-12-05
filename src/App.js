@@ -8,18 +8,21 @@ import DisplayResult from './DisplayResult'
 import Lifes from './Lifes'
 
 class App extends Component {
-  state = {
-    title: "Jeu du pendu",
-    phrasesCollection: [
-      "dependance", "composant", "librairie", "exercice", "pratique", "amusant", "reactif", "anticonstitutionnellement", 
-      "developpement", "informatique", "ordinateur", "encapsulation", "interpolation", "programmation", "technologie",
-    ],
-    currentPhrase: null,
-    usedLetters: new Set(),
-    result: 0, // 0: neutre | 1: gagné | 2: perdu
-    attempt: 0,
-    maxAttempt: 7,
-    score: 0,
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: "Jeu du pendu",
+      phrasesCollection: [
+        "dependance", "composant", "librairie", "exercice", "pratique", "amusant", "reactif", "anticonstitutionnellement",
+        "developpement", "informatique", "ordinateur", "encapsulation", "interpolation", "programmation", "technologie",
+      ],
+      currentPhrase: null,
+      usedLetters: new Set(),
+      result: 0, // 0: neutre | 1: gagné | 2: perdu
+      attempt: 0,
+      maxAttempt: 7,
+      score: 0,
+    }
   }
 
   componentDidMount() {
