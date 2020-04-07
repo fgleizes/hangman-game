@@ -2,7 +2,8 @@
 
 .pendu {
   font-family: 'Rye', cursive;
-  background-image: url('/img/parchemin.jpg');
+  /* background-image: url('/img/parchemin.jpg'); path for background build*/ 
+  background-image: url('parchemin.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
